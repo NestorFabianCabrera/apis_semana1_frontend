@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from './services/personaje-service.service';
-import { Character } from './interface/character';
+import { ApiService } from '../../services/personaje-service.service';
+import { Character } from '../../interface/character';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss']
 })
-export class AppComponent implements OnInit {
+export class CardComponent implements OnInit {
   characters: Character[] = [];
 
   constructor(private charactersService: ApiService) { }
@@ -22,4 +22,5 @@ export class AppComponent implements OnInit {
       }
     });
   }
+
 }
