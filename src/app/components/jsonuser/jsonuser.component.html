@@ -2,17 +2,17 @@
   <h1>Agregar User a la Lista</h1>
 
   <form class="example-form">
-    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-form-field class="example-full-width formCpm" appearance="fill">
       <mat-label>Nombre</mat-label>
       <input matInput placeholder="Ingrese el nombre" [(ngModel)]="newUser.name" name="name" >
     </mat-form-field>
-    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-form-field class="example-full-width formCpm" appearance="fill">
       <mat-label>Email</mat-label>
       <input matInput placeholder="Ingrese el correo" [(ngModel)]="newUser.email" name="email" >
     </mat-form-field>
-
-    <button mat-raised-button color="primary" (click)="saveUser()">Guardar</button>
   </form>
+
+  <button class="formCpm" mat-raised-button color="primary" (click)="saveUser()">Guardar</button>
 
 </div>
 

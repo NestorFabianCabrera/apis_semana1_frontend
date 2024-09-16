@@ -10,16 +10,14 @@
 
 .imageC{
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .characterImage {
+  margin: auto;
   width: 6rem;
   height: 6rem;
   padding: 1rem;
   margin-top: 5rem;
-  text-align: center;
 }
 
 .example-header-image {
@@ -30,7 +28,7 @@
 
 .item {
   text-align: center;
-  flex-basis: calc(25% - 1rem);
+  flex-basis: calc(25% - 3rem);
   background-color: #737bc0;
   margin-bottom: 2rem;
   padding: 3rem;
